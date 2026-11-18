@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+
+        System.out.println("Length: " + str.length());
+        System.out.println("Uppercase: " + str.toUpperCase());
+        System.out.println("Lowercase: " + str.toLowerCase());
+        System.out.println("First Character: " + str.charAt(0));
+        System.out.println("Last Character: " + str.charAt(str.length() - 1));
+        System.out.println("Reverse: " + new StringBuilder(str).reverse());
+        System.out.println("Contains Java: " + str.contains("Java"));
+        System.out.println("Replace: " + str.replace('a', 'e'));
+        System.out.println("Substring: " + str.substring(0, 3));
+        System.out.println("Is Empty: " + str.isEmpty());
+    }
+}
